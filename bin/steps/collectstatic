@@ -69,11 +69,11 @@ echo "==> Now you're all setup and ready for development. If changes are yet tot
 if [ ! "$DISABLE_COLLECTSTATIC" ] && [ -f "$MANAGE_FILE" ] && [ "$DJANGO_INSTALLED" ]; then
     set +e
     
-    cd "app/django_python_boilerplate/static"
+    cd "amisons/static"
     npm install -g grunt-cli
     npm install
     grunt
-    cd "../../../"
+    cd "../"
     puts-step "$ python $MANAGE_FILE collectstatic --noinput"
 
     # Run collectstatic, cleanup some of the noisy output.
