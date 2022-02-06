@@ -73,7 +73,7 @@ if [ ! "$DISABLE_COLLECTSTATIC" ] && [ -f "$MANAGE_FILE" ] && [ "$DJANGO_INSTALL
     npm install -g grunt-cli
     npm install
     grunt
-    cd "../"
+    cd "../../"
     puts-step "$ python $MANAGE_FILE collectstatic --noinput"
 
     # Run collectstatic, cleanup some of the noisy output.
